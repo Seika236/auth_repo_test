@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --font-montserrat: "Montserrat", ui-sans-serif, system-ui;
+}
+
+@layer base {
+  @font-face {
+    font-family: "Montserrat";
+    src: url("./fonts/Montserrat-Italic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic; /* Исправили на italic, так как файл курсивный */
+  }
+}
+
+* {
+  box-sizing: border-box;
+  font-family: var(--font-montserrat);
+}
