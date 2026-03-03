@@ -8,7 +8,7 @@ type Props = {
 
 export function MyButton({ onClick, children, variant }: Props) {
   const basedStyles =
-    "w-full cursor-pointer py-4.5 font-bold rounded-2xl transition-colors uppercase tracking-wider text-sm";
+    "w-full cursor-pointer py-4.5 font-bold rounded-2xl transition-colors uppercase tracking-wider text-[12px]";
 
   const variants = {
     blue: "bg-[#2662F3] hover:bg-[#709AFE] active:bg-[#1450E0] text-white",

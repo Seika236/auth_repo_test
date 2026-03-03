@@ -51,12 +51,12 @@ export function RegistrationForm({ setAuth }: Props) {
     <span>Loading...</span>
   ) : (
     <div className="relative w-full flex  items-start text-start justify-center overflow-hidden ">
-      <div className="relative w-full max-w-[600px] bg-white/70 backdrop-blur-sm rounded-[48px] p-10 shadow-xl border border-white/50 m-4">
-        <h1 className="text-4xl font-bold text-center text-[#2D2D2D] mb-8">
+      <div className="relative w-full max-w-[500px] bg-white/70 backdrop-blur-sm rounded-[48px] px-[68px] py-[56px] shadow-xl border border-white/50 m-4">
+        <h1 className="text-[32px] font-bold text-center text-[#2D2D2D] mb-6 md:mb-8 md:text-[44px]">
           Регистрация
         </h1>
 
-        <form className="space-y-6" onSubmit={loginFormSubmitHandler(onSubmit)}>
+        <form className="space-y-2" onSubmit={loginFormSubmitHandler(onSubmit)}>
           {isNext ? (
             <div className="space-y-2">
               <label className="block text-sm text-gray-500 ml-1">login</label>
@@ -129,7 +129,7 @@ export function RegistrationForm({ setAuth }: Props) {
           </div>
         </form>
 
-        <div className="mt-8 text-center space-y-1">
+        <div className="mt-2 text-center space-y-1">
           <p className="text-sm text-gray-600">
             Возник вопрос или что-то сломалось?
           </p>
