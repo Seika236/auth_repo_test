@@ -1,0 +1,46 @@
+# --- Зависимости ---
+node_modules/
+.pnpm-store/
+jspm_packages/
+
+# --- Секреты и конфиги (ВАЖНО) ---
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# --- Сборка и вывод ---
+dist/
+build/
+.cache/
+out/
+.vercel
+.netlify
+
+# --- Prisma ---
+# Игнорируем только SQLite базу (если используешь её локально)
+*.db
+*.db-journal
+
+# --- IDE (WebStorm / VS Code) ---
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# --- Логи ---
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# --- Тесты ---
+coverage/
+.nyc_output
+
+# --- TypeScript ---
+*.tsbuildinfo
